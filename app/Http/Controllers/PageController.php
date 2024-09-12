@@ -30,4 +30,11 @@ class PageController extends Controller
     {
         return view('contacts');
     }
+
+    public function trains()
+
+    {
+        $list_trains = Train::where('departure_date', '2024-09-12')->get();
+        return view('trains', compact('list_trains'));
+    }
 }
