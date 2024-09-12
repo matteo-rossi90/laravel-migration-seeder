@@ -34,7 +34,11 @@ class PageController extends Controller
     public function trains()
 
     {
-        $list_trains = Train::where('departure_date', '2024-09-12')->get();
+        //restituire la data odierna
+        $oggi = date('Y-m-d');
+
+        $list_trains = Train::where('departure_date', $oggi)->get();
+
         return view('trains', compact('list_trains'));
     }
 }
