@@ -29,7 +29,7 @@
       <td>{{$train->arrival_station}}</td>
       <td>{{$train->departure_time}}</td>
       <td>{{$train->arrival_time}}</td>
-      <td>{{$train->departure_date}}</td>
+      <td>{{Carbon\Carbon::parse($train->departure_date)->format('d/m/Y')}}</td>
       <td>{{$train->train_code}}</td>
       <td>{{$train->coach}}</td>
       <td>{{$train->on_time ? 'In orario' : 'In ritardo'}}</td>
