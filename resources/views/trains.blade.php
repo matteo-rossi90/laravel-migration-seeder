@@ -32,8 +32,8 @@
       <td>{{$train->departure_date}}</td>
       <td>{{$train->train_code}}</td>
       <td>{{$train->coach}}</td>
-      <td>{{$train->on_time}}</td>
-      <td>{{$train->is_cancelled}}</td>
+      <td>{{$train->on_time ? 'In orario' : 'In ritardo'}}</td>
+      <td>{{$train->is_cancelled ? 'Cancellato' : '-'}}</td>
     </tr>
 
     @endforeach
