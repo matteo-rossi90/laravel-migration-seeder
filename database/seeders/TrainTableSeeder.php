@@ -7,9 +7,6 @@ use Illuminate\Database\Seeder;
 use App\Models\Train;
 use Faker\Generator as Faker;
 
-//importare la libreria Carbon per la gestione delle date
-use Carbon\Carbon;
-
 class TrainTableSeeder extends Seeder
 {
     /**
@@ -20,11 +17,11 @@ class TrainTableSeeder extends Seeder
     public function run(Faker $faker): void
     {
 
-        //stabilire delle varibili corrispondenti a inizio e fine data
+        //stabilire delle variabili corrispondenti a inizio e fine data
         $startDate = '2024-09-13';
         $endDate = '2024-09-30';
 
-        //stabilire delle variabili per generare
+        //stabilire delle variabili per generare la data di partenza e la data di arrivo
         $departure_date_time = $faker->dateTimeBetween('06:00', '20:59');
         $arrival_date_time = $faker->dateTimeBetween('10:00', '23:54' );
 

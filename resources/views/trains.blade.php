@@ -15,7 +15,7 @@
       <th scope="col">Orario di arrivo</th>
       <th scope="col">Data di partenza</th>
       <th scope="col">Codice treno</th>
-      <th scope="col">Numero carrozze</th>
+      <th scope="col">N. carrozze</th>
       <th scope="col">In orario</th>
       <th scope="col">Cancellato</th>
     </tr>
